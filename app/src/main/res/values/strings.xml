@@ -1,0 +1,128 @@
+<resources>
+
+    <string name="app_name">Layout Creator Lite</string>
+
+    <!-- Stings Tela de Descrição -->
+
+    <string name="salvos_t_d">Saved</string>
+    <string name="altura_t_d">Height</string>
+    <string name="largura_t_d">Width</string>
+    <string name="nome_t_d">Name</string>
+    <string name="area_inicial_t_d">Initial Area</string>
+    <string name="area_nao_utilizada_t_d">Unused Area</string>
+    <string name="nao_inseridos_t_d">Not inserted</string>
+    <string name="utilizado_t_d">Used</string>
+    <string name="mensagem_multável_t_d_1">Make or call a (valid) save before…</string>
+    <string name="mensagem_multável_t_d_2">Make or call save before…</string>
+    <string name="mensagem_multável_t_d_3">The item was successfully deleted!</string>
+
+    <!-- Stings Tela De Entrada -->
+    <string name="novo_layout_t_e">New layout</string>
+    <string name="salvos_t_e">Saved</string>
+    <string name="salve_um_layout_antes_TE">Save a layout before.</string>
+
+    <!-- Stings Tela Novo Layout -->
+    <string name="nome_layout_t_n_l">Layout Name</string>
+    <string name="tecido_t_n_l">Tissue</string>
+    <string name="produtos_t_n_l">Products</string>
+    <string name="layout_desenhado_t_n_l">Layout Design</string>
+    <string name="adicione_nome_altura_largura_e_salve_um_produto_para_ver_a_preview_do_layout_t_n_l">Add, name, height, width and save a product to see the layout preview.</string>
+    <string name="altura_t_n_l">Height</string>
+    <string name="largura_t_n_l">Width</string>
+    <string name="nome_t_n_l">Name</string>
+    <string name="area_inicial_t_n_l">Initial Area</string>
+    <string name="area_nao_utilizada_t_n_l">Unused Area</string>
+    <string name="nao_inseridos_t_n_l">Not inserted</string>
+    <string name="utilizado_t_n_l">Used</string>
+    <string name="mensagem_multável_t_n_l_1">Do you want to change the width and height of this save by the ones typed now?</string>
+    <string name="mensagem_multável_t_n_l_2">Do you want to delete the custom layout and recalculate according to the system?</string>
+    <string name="mensagem_multável_t_n_l_3">Add name, height, width, save two products, and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_4">Add name, height, save two products, and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_5">Add name, width, save two products, and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_6">Add height, width, save two products, and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_7">Add name, save two products, and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_8">Add height, save two products, and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_9">Add width, save two products, and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_10">Add width, height, and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_11">Add a name and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_12">Add height and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_13">Add width and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_14">Add two products and reload to see the layout preview.</string>
+    <string name="mensagem_multável_t_n_l_15">All right. If you can\'t see it, recharge.</string>
+    <string name="mensagem_multável_t_n_l_16">This layout is customizable, see in the second frame how it looks with the system organization. If you want to return to it, select it, and save</string>
+    <string name="mensagem_multável_t_n_l_17">No Pre-Registered Product</string>
+    <string name="mensagem_multável_t_n_l_18">Or</string>
+    <string name="mensagem_multável_t_n_l_19">%1$s, %2$s (Not saved)</string>
+    <string name="mensagem_multável_t_n_l_20">This product name already exists.</string>
+    <string name="mensagem_multável_t_n_l_21">New product added.</string>
+    <string name="mensagem_multável_t_n_l_22">With this cell phone… Please enter an amount less than 75…</string>
+    <string name="mensagem_multável_t_n_l_23">This is already a customizable layout, add products on this screen</string>
+    <string name="mensagem_multável_t_n_l_24">Width Must be less than 250</string>
+    <string name="mensagem_multável_t_n_l_25">Make or call a (valid) save before…</string>
+    <string name="mensagem_multável_t_n_l_26">Make or call a save before…</string>
+    <string name="mensagem_multável_t_n_l_27">Loading, please do not exit..</string>
+    <string name="mensagem_multável_t_n_l_28">This layout does not exist.</string>
+    <string name="mensagem_multável_t_n_l_29">Something wrong with the fields…</string>
+    <string name="mensagem_multável_t_n_l_30">Now Add Products.</string>
+    <string name="mensagem_multável_t_n_l_31">Follow the steps! First enter your name, and fill in the fields.</string>
+    <string name="mensagem_multável_t_n_l_32">Correct the fields.</string>
+    <string name="mensagem_multável_t_n_l_33">Follow the steps! First put a name.</string>
+    <string name="mensagem_multável_t_n_l_34">Follow the steps! First enter a name, and fill in the fields.</string>
+    <string name="mensagem_multável_t_n_l_35">Add the products first.</string>
+    <string name="mensagem_mutável_t_n_l_36">The item was successfully deleted!</string>
+
+
+    <!-- Stings Caixa De Dialogo Add Produtos -->
+
+    <string name="nome_do_produto_c_d_add_p">Product Name</string>
+    <string name="quantidade_c_d_add_p">Quantity</string>
+    <string name="largura_c_d_add_p">Width</string>
+    <string name="altura_c_d_add_p">Height</string>
+
+    <!-- Stings Caixa De Dialogo Aalterar Largura e Altura -->
+
+    <string name="mensagem_multável_c_d_l_a_1">Yes</string>
+    <string name="mensagem_multável_c_d_l_a_2">Check the height and width.</string>
+    <string name="mensagem_multável_c_d_l_a_3">All right, I ll change the measurements…</string>
+    <string name="mensagem_multável_c_d_l_a_4">No</string>
+
+    <!-- Stings Empacotamento 2d -->
+    <string name="mensagem_multável_empacotamento_1">"That's it  "</string>
+    <string name="mensagem_multável_empacotamento_2">All right, your Layout has been saved.</string>
+    <string name="mensagem_multável_empacotamento_3">Do you want to save the changes?</string>
+    <string name="mensagem_multável_empacotamento_4">They were them and in the products:</string>
+    <string name="mensagem_multável_empacotamento_5">Yes</string>
+    <string name="mensagem_multável_empacotamento_6">No</string>
+    <string name="mensagem_multável_empacotamento_7">Yes</string>
+    <string name="mensagem_multável_empacotamento_8">Name</string>
+    <string name="mensagem_multável_empacotamento_9">Quantity</string>
+    <string name="mensagem_multável_empacotamento_10">Width</string>
+    <string name="mensagem_multável_empacotamento_11">Height</string>
+    <string name="mensagem_multável_empacotamento_12">Save</string>
+    <string name="mensagem_multável_empacotamento_13">Successfully saved </string>
+    <string name="mensagem_multável_empacotamento_14">Error </string>
+    <string name="mensagem_multável_empacotamento_15">Fill in the fields correctly </string>
+    <string name="mensagem_multável_empacotamento_16">Fill in the fields correctly. </string>
+    <string name="mensagem_multável_empacotamento_18">This product name already exists </string>
+    <string name="mensagem_multável_empacotamento_17">No</string>
+
+    <!-- Stings View Holder -->
+
+    <string name="mensagem_multável_view_holder_1">The item was successfully deleted!</string>
+    <string name="mensagem_multável_view_holder_2">The item was successfully deleted!</string>
+
+    <string name="vamos_come_ar_com_o_nome_do_layout">Let\'s start with the name of the layout?</string>
+
+    <string name="quando_estiver_pronto_avan_e_para_pr_xima_etapa">When you\'re ready, move on to the next step.</string>
+
+    <string name="use_os_botoes_dos_lados_z_l">Use the buttons on the sides…</string>
+    <string name="texto_zoom_layout">Text</string>
+    <string name="zoom_zoom_layout">Zoom</string>
+    <string name="altura_zoom_layout">height</string>
+    <string name="nome_zoom_layout">Name</string>
+    <string name="largura_zoom_layout">width</string>
+    <string name="salvar_zoom_layout">Save</string>
+    <string name="virar_zoom_layout">Rotate</string>
+    <string name="produto_zoom_layout">Product</string>
+
+</resources>
