@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/container_fundo_azul_2"
+    android:layout_gravity="center"
+    android:padding="15dp">
+
+
+    <Spinner
+        android:id="@+id/spinner_produtos_tnl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_fundo_branco_contorno_grosso"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_ou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/sugo_display"
+        android:text="Ou"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/spinner_produtos_tnl"
+        app:layout_constraintBottom_toTopOf="@id/linear_layout_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/reescrever_produtos_tnl"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_transicionar_telas"
+        android:background="@drawable/container_fundo_azul_2"
+        android:padding="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/spinner_produtos_tnl"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_ou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/nome_caixa_de_dialogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container_fundo_branco_contorno_grosso"
+            android:hint="@string/nome_do_produto_c_d_add_p"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:inputType="text"
+            android:maxLines="1"
+            android:fontFamily="@font/sugo_display"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="30dp"/>
+
+        <EditText
+            android:id="@+id/quantidade_caixa_de_dialogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container_fundo_branco_contorno_grosso"
+            android:hint="@string/quantidade_c_d_add_p"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="3"
+            android:fontFamily="@font/sugo_display"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="30dp"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/largura_caixa_de_dialogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container_fundo_branco_contorno_grosso"
+            android:hint="@string/largura_c_d_add_p"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="3"
+            android:fontFamily="@font/sugo_display"
+            android:paddingVertical="15dp"
+            android:paddingHorizontal="30dp"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_layout_1">
+
+        <ImageView
+            android:id="@+id/excluir_caixa_de_dialogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/container_fundo_azul_1"
+            android:padding="15dp"
+            android:src="@drawable/ic_lixeira" />
+
+        <EditText
+            android:id="@+id/altura_caixa_de_dialogo"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/container_fundo_branco_contorno_grosso"
+            android:fontFamily="@font/sugo_display"
+            android:gravity="center"
+            android:hint="@string/altura_c_d_add_p"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="15dp" />
+
+        <ImageView
+            android:id="@+id/salvar_caixa_de_dialogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/container_fundo_azul_1"
+            android:padding="15dp"
+            android:src="@drawable/ic_nuvemr_transparent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

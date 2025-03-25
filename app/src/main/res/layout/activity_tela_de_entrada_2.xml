@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/cinza"
+    tools:context=".TelaDeEntrada">
+
+    <View
+        android:id="@+id/view_superior_1_te"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/container_fundo_branco_contorno_grosso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_superior_1_te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/anton_regular"
+        android:text="LAYOUT"
+        android:textColor="@color/azul_1"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_superior_1_te"
+        app:layout_constraintEnd_toEndOf="@+id/view_superior_1_te"
+        app:layout_constraintStart_toStartOf="@+id/view_superior_1_te"
+        app:layout_constraintTop_toTopOf="@+id/view_superior_1_te" />
+
+    <View
+        android:id="@+id/view_superior_2_te"
+        android:layout_width="265dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/container_fundo_azul_2_contorno_grosso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_superior_2_te"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/railey"
+        android:gravity="center"
+        android:text="Creator"
+        android:textColor="@color/white"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_superior_2_te"
+        app:layout_constraintStart_toStartOf="@+id/view_superior_2_te"
+        app:layout_constraintTop_toTopOf="@+id/view_superior_2_te" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_papel_lapis"
+        app:layout_constraintBottom_toBottomOf="@id/view_superior_2_te"
+        app:layout_constraintEnd_toEndOf="@+id/view_superior_2_te" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="350dp"
+        android:layout_height="540dp"
+        android:background="@drawable/container_fundo_azul_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/novo_layout"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@id/novo_layout" />
+
+    <TextView
+        android:id="@+id/novo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_fundo_branco_contorno_grosso"
+        android:fontFamily="@font/sugo_display"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="35dp"
+        android:text="@string/novo_layout_t_e"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/ic_mais_2"
+        app:layout_constraintBottom_toBottomOf="@id/novo_layout"
+        app:layout_constraintStart_toStartOf="@id/novo_layout" />
+
+    <TextView
+        android:id="@+id/saves_tela_de_entrada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/container_fundo_azul_2_contorno_grosso"
+        android:fontFamily="@font/sugo_display"
+        android:paddingHorizontal="60dp"
+        android:paddingVertical="25dp"
+        android:text="@string/salvos_t_e"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/novo_layout" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="195dp"
+        android:layout_marginBottom="65dp"
+        android:src="@drawable/ic_disket_nuvem"
+        app:layout_constraintBottom_toBottomOf="@id/saves_tela_de_entrada"
+        app:layout_constraintStart_toStartOf="@id/saves_tela_de_entrada" />
+
+
+    <View
+        android:id="@+id/view_inferior_2_te"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/container_fundo_azul_1_contorno_fino"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:background="@color/cinza"
+    tools:context=".Activitys.TelaDeDescricao">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container_fundo_azul_1"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/saves_tela_de_descricao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <Spinner
+                android:id="@+id/spinner_nomes_tela_de_descrição"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/container_fundo_branco_contorno_grosso"
+                android:paddingHorizontal="60dp"
+                android:paddingVertical="25dp"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.compose.ui.platform.ComposeView
+                android:id="@+id/compose_simples_tela_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/container_fundo_branco_contorno_fino"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_tela_descricacao_produtos"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:padding="10dp"
+                android:layout_marginBottom="20dp"
+                tools:listitem="@layout/descricao_completa_recycler_view"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/saves_tela_de_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/container_fundo_azul_2_contorno_grosso"
+            android:fontFamily="@font/sugo_display"
+            android:paddingHorizontal="110dp"
+            android:paddingVertical="25dp"
+            android:text="@string/salvos_t_d"
+            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ImageView
+            android:id="@+id/aumentar_layout_tela_descricao"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_aumentar"
+            android:layout_margin="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/linear_layout_1"
+            app:layout_constraintTop_toBottomOf="@+id/saves_tela_de_descricao" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="15dp"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_1"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/altura_t_d"
+                android:fontFamily="@font/sugo_display"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <View
+                android:id="@+id/altura_view_1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_eye_1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/largura_t_d"
+                android:fontFamily="@font/sugo_display"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <View
+                android:id="@+id/largura_view_2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_eye_1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nome_t_d"
+                android:fontFamily="@font/sugo_display"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <View
+                android:id="@+id/nome_view_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_eye_1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_2"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="45dp"
+            android:background="@drawable/container_fundo_branco_contorno_fino"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_4"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/text_area_inicial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sugo_display"
+                android:text="@string/area_inicial_t_d"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/text_area_final"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sugo_display"
+                android:text="@string/area_nao_utilizada_t_d"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="27dp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/nao_iseridos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sugo_display"
+                android:text="@string/nao_inseridos_t_d"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="35dp"
+                android:layout_marginHorizontal="10dp"/>
+
+            <TextView
+                android:id="@+id/pct_utilizado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sugo_display"
+                android:text="@string/utilizado_t_d"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginTop="27dp"
+                android:layout_marginHorizontal="10dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_area_inicial_mutavel"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:fontFamily="@font/sugo_display"
+            android:text="XXXm²"
+            android:background="@drawable/container_fundo_azul_2"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/linear_layout_4"
+            app:layout_constraintStart_toEndOf="@id/linear_layout_2"
+            />
+
+        <TextView
+            android:id="@+id/text_area_final_mutavel"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:fontFamily="@font/sugo_display"
+            android:text="XXXm² "
+            android:background="@drawable/container_fundo_azul_2"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@+id/text_area_inicial_mutavel"
+            app:layout_constraintStart_toEndOf="@id/linear_layout_2"
+            />
+
+        <TextView
+            android:id="@+id/nao_iseridos_mutavel"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:fontFamily="@font/sugo_display"
+            android:text="XX"
+            android:background="@drawable/container_fundo_azul_2"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/text_area_final_mutavel"
+            app:layout_constraintStart_toEndOf="@id/linear_layout_2"
+            />
+
+        <TextView
+            android:id="@+id/pct_utilizado_mutavel"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:background="@drawable/container_fundo_azul_2"
+            android:fontFamily="@font/sugo_display"
+            android:padding="15dp"
+            android:text="XX% "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/linear_layout_2"
+            app:layout_constraintTop_toBottomOf="@+id/nao_iseridos_mutavel" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_2">
+
+            <ImageButton
+                android:id="@+id/excluir_btn_tela_layout_completo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/container_fundo_azul_2_contorno_grosso"
+                android:padding="15dp"
+                android:src="@drawable/ic_lixeira"
+                android:layout_margin="15dp"/>
+
+            <ImageView
+                android:id="@+id/seta_direcao_tela_descricao"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/container_fundo_azul_1"
+                android:padding="15dp"
+                android:src="@drawable/ic_seta_comprimento_2"
+                android:layout_margin="15dp"/>
+
+            <ImageButton
+                android:id="@+id/transicionar_telas_tela_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:src="@drawable/ic_transicionar_telas"
+                android:background="@drawable/container_fundo_azul_1"
+                android:layout_margin="15dp"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

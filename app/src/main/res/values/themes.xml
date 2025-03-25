@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.LayoutCreator" parent="Base.Theme.LayoutCreator" />
+    <style name="Base.Theme.LayoutCreator" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/cinza</item>
+    </style>
+
+
+    <style name="Theme.LayoutCreator_Azul" parent="Theme.Material3.DayNight.NoActionBar" >
+        <item name="android:statusBarColor">@color/azul_1</item>
+    </style>
+
+</resources>
